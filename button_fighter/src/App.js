@@ -28,8 +28,8 @@ function App() {
     <div className="App">
       <h1>Button Fighter</h1>
         <p>Turn based fighter game. Player vs AI.</p>
-        <Player name={"Hero"} health={playerhealth} />
-        <Enemy name={"Villen"} health={enemyhealth} />
+        <Player name={"Player"} health={playerhealth} />
+        <Enemy name={"Enemy"} health={enemyhealth} />
         <button onClick={attackEnemy} disabled={turn !== "Player"}>Attack</button>
         {playerhealth === 0 && <h2> You Loss </h2>}
         {enemyhealth === 0 && <h2> You Win </h2>}
