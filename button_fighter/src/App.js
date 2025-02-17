@@ -1,6 +1,6 @@
 import Player from './components/player';
 import Enemy from './components/enemy';
-import react from 'react'
+import react, {useState} from 'react';
 
 function App() {
   return (

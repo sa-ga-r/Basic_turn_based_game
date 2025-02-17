@@ -1,6 +1,6 @@
 import react from 'react';
 
-function Enemy({name}){
+function Enemy({name, health}){
     return (
         <div>
             <h2>{name}</h2>

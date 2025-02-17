@@ -1,6 +1,6 @@
 import react from 'react';
 
-function Player({name}) {
+function Player({name, health}) {
     return (
         <div>
             <h2>{name}</h2>
