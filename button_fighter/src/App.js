@@ -8,12 +8,14 @@ function App() {
   const [turn, setTurn] = useState("player");
 
   const attackEnemy = () => {
-    setenemyHealth((prevhealth) => Math.max(0, prevhealth - 10));
+    const damage = Math.max(0, Math.floor(Math.random() * 11) + 5);
+    setenemyHealth((prevhealth) => Math.max(0, prevhealth - damage));
     setTurn("enemy");
   };
 
   const attackPlayer = () => {
-    setplayerHealth((prevhealth) => Math.max(0, prevhealth - 10));
+    const damage = Math.max(0, Math.floor(Math.random() * 11) + 5);
+    setplayerHealth((prevhealth) => Math.max(0, prevhealth - damage));
     setTurn("player");
   };
 
