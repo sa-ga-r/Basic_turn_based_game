@@ -1,7 +1,6 @@
-import react, {useState} from 'react';
+import react from 'react';
 
 function Enemy({name}){
-    const [health, setHealth] = useState(100);
     return (
         <div>
             <h2>{name}</h2>
